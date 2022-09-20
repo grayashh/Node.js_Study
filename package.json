@@ -1,0 +1,20 @@
+{
+  "name": "node.js_study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grayashh/Node.js_Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grayashh/Node.js_Study/issues"
+  },
+  "homepage": "https://github.com/grayashh/Node.js_Study#readme",
+  "type": "module"
+}
