@@ -1,4 +1,5 @@
 import http from "http";
+import fs from "fs";
 
 const server = http.createServer((req, res) => {
   const url = req.url;
@@ -11,6 +12,11 @@ const server = http.createServer((req, res) => {
     );
     res.write("</html>");
     return res.end();
+  }
+  if (url === "/message" && req.method === "POST") {
+    fs.writeFileSync("message.txt", "DUMMY");
+    res.writeHead(302, { Location: "/" });
+    res.end();
   }
   res.setHeader("Content-Type", "text/html");
   res.write("<html>");
